@@ -41,10 +41,10 @@ A GitHub repository containing:
 - Azure App service – Create app service and host dashboard
 ## Step 1: Deploy Infrastructure on Azure Cloud Using Automation Scripts
 
-(Click here for the deployment Script)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/VM-Script.md]
+[Click here for the deployment Script](https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/Automationscript.md)
 
 ### 1.1 Create Virtual Machines Using Script
-- (Click here for bash script for creating 3 Ubuntu VMs)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/Automationscript.md]
+- [Click here for bash script for creating 3 Ubuntu VMs](https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/VM-Script.md)
 Example script provisions VMs with required size, OS, networking, and tags.
 
 1.2 Install Required Services on VMs
@@ -78,7 +78,7 @@ To fetch all services irrespective of status
 ```
 systemctl list-units --type=service --all >> all_service.txt
 ```
-(Click here for the script to escalate if the service fails to start on 3 consecutive checks)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/3consecutivescript.md]
+[Click here for the script to escalate if the service fails to start on 3 consecutive checks](https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/3consecutivescript.md)
 
 ## Step 3: Disk space compliance 
 ```
