@@ -1,11 +1,17 @@
 #!/bin/bash
-
+mkdir assignment1
 # Save all services to a file
-systemctl list-units --type=service --all >> all_service.txt
+systemctl list-units --type=service --all >> assignment1/all_service.txt
 
 # Check Apache status and logs (optional debug)
-sudo systemctl status apache2 >> service.log
-sudo journalctl -u apache2 >> service.log
+sudo systemctl status apache2 >> assignment1/service.log
+sudo journalctl -u apache2 >> assignment1/service.log
+
+# Check the server name 
+hostname >> assignment1/servername.txt
+
+# user name 
+who >> assignment1/username.txt
 
 # Restart Apache (optional)
 # sudo systemctl restart apache2
@@ -14,7 +20,7 @@ sudo journalctl -u apache2 >> service.log
 SERVICE="apache2"
 FAIL_COUNT_FILE="/tmp/${SERVICE}_fail_count"
 MAX_FAILS=3
-LOG_FILE="service_monitor.log"
+LOG_FILE="assignment1/service_monitor.log"
 
 if [ ! -f "$FAIL_COUNT_FILE" ]; then
   echo 0 > "$FAIL_COUNT_FILE"
@@ -40,10 +46,10 @@ fi
 echo "There are $failed_count failed services"
 
 # Log disk usage
-df -h >> DiskSpace.txt
+df -h >> assignment1/DiskSpace.txt
 
 # Log zombie processes
-ps aux | grep '[Z]' >> Zombieprocess.txt
+ps aux | grep '[Z]' >> assignment1/Zombieprocess.txt
 
 
 
@@ -52,5 +58,5 @@ ps aux | grep '[Z]' >> Zombieprocess.txt
 
 crontab -e
 
-35 10 * * * /bin/bash/home/azure/allservises.sh >> home/azure/crone.daily
-35 11 * * 1 /bin/bash/home/azure/allservises.sh >> home/azure/crone.daily
+35 10 * * * /bin/bash/home/azure/services.sh >> home/azure/crone.daily
+35 11 * * 1 /bin/bash/home/azure/servises.sh >> home/azure/crone.daily

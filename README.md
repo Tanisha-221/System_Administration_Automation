@@ -41,10 +41,10 @@ A GitHub repository containing:
 - Azure App service – Create app service and host dashboard
 ## Step 1: Deploy Infrastructure on Azure Cloud Using Automation Scripts
 
-(Click here for the deployment Script)[]
+(Click here for the deployment Script)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/VM-Script.md]
 
 ### 1.1 Create Virtual Machines Using Script
-- (Click here for bash script for creating 3 Ubuntu VMs)[]
+- (Click here for bash script for creating 3 Ubuntu VMs)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/Automationscript.md]
 Example script provisions VMs with required size, OS, networking, and tags.
 
 1.2 Install Required Services on VMs
@@ -78,7 +78,7 @@ To fetch all services irrespective of status
 ```
 systemctl list-units --type=service --all >> all_service.txt
 ```
-(Click here for the script to escalate if the service fails to start on 3 consecutive checks)[]
+(Click here for the script to escalate if the service fails to start on 3 consecutive checks)[https://github.com/Tanisha-221/System_Administration_Automation/blob/main/Script.ssh/3consecutivescript.md]
 
 ## Step 3: Disk space compliance 
 ```
@@ -96,6 +96,27 @@ crontab -e  #to edit the cron file
 ```
 ps aux | grep 'Z'
 ```
+## Step 6: Give Execute permission to the file 
+```
+chmod +e <file_path>
+```
+## Step to zip a file 
+```
+sudo apt install zip
+zip -r archivename.zip directory_name
+```
+
+## Testing Phases 
+- Folder named assignment1 
+- Files that stores the detail about 
+  * Disk comsumption 
+  * Status of the service 
+  * All services irrespective of name 
+  * Zoombie process 
+  * Server name 
+  * Username 
+  * Zipped file 
+- Show error message if servive failed to start 3 times 
 ## Project Summary
 The project focused on developing an automated Linux service monitoring system using Bash scripting combined with scheduled execution via cron jobs. The core functionality involved:
 - Periodically checking the status of critical services (e.g., Apache apache2).
