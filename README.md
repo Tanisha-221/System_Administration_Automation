@@ -125,4 +125,16 @@ The project focused on developing an automated Linux service monitoring system u
 - Collecting and logging additional system health information such as disk usage and zombie processes.
 - Automating the monitoring process through cron jobs scheduled at specified times.
 - Managing logs and outputs to designated files for audit and troubleshooting purposes
+## Lessons Learned 
+- Modular Scripts: Breaking automation into smaller scripts improved maintainability and reusability.
+- Error Handling: Adding logging and retries prevented silent failures.
+- Cron Scheduling: Careful timing avoided overlapping jobs and ensured consistent reporting.
+- Persistent Monitoring: Storing failure counts enabled accurate alerts for repeated service failures.
+- Disk Space Checks: Automated compliance checks prevented outages due to full disks.
+- Centralized Reporting: Dashboards and daily reports improved visibility and decision-making.
+- Security Integration: Early checks for failed logins and zombie processes enhanced compliance.
+- Documentation: Clear instructions made onboarding and troubleshooting easier.
+- Azure Ecosystem: Leveraging Azure services streamlined deployment and monitoring.
+- Continuous Improvement: Iterative testing and feedback drove better reliability and scalability.
+
 
