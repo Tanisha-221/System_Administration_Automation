@@ -1,4 +1,4 @@
-# System_Administration_Automation
+System # System_Administration_Automation
 ## Project Overview 
 This project helps automate the regular and time-consuming tasks of managing servers and systems hosted on Microsoft Azure. Instead of doing everything manually, it uses scripts to automatically create and manage virtual machines, check if important services are running smoothly, monitor disk space, and track any failed login attempts.
 
@@ -136,5 +136,14 @@ The project focused on developing an automated Linux service monitoring system u
 - Documentation: Clear instructions made onboarding and troubleshooting easier.
 - Azure Ecosystem: Leveraging Azure services streamlined deployment and monitoring.
 - Continuous Improvement: Iterative testing and feedback drove better reliability and scalability.
+  ##  Future Enhancements
+- Integrate with Azure Monitor and Log Analytics for advanced insights.
+- Add auto-scaling for VMs based on load.
+- Implement containerization (Docker + Azure Container Instances) for portability.
+- Introduce AI-based anomaly detection for service failures.
+##  Limitations
+- Current scripts are Linux-focused; Windows support can be added.
+- Basic alerting via email; SMS or Teams integration can be future scope.
+- Manual dashboard refresh; real-time updates could improve UX.
 
 
