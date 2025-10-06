@@ -1,4 +1,4 @@
-System # System_Administration_Automation
+# System_Administration_Automation
 ## Project Overview 
 This project helps automate the regular and time-consuming tasks of managing servers and systems hosted on Microsoft Azure. Instead of doing everything manually, it uses scripts to automatically create and manage virtual machines, check if important services are running smoothly, monitor disk space, and track any failed login attempts.
 
